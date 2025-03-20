@@ -48,6 +48,9 @@ def isCycle(n, coord):
 
 
 # test cases
+# cases must be of value that are tuples in form (n, [])
+# n = number of nodes
+# [] = coordinate pairs to traverse through
 test1 = (7, [(0, 1), (1, 2), (2, 3), (3, 2), (5, 2), (4, 6)])
 test2 = (5, [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5)])
 
