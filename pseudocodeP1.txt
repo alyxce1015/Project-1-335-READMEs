@@ -1,0 +1,21 @@
+IsCycle(n, coords):
+    Create an adjacency list 'graph' to store the paths between nodes.
+    insert nodes into 'graph' using the given coordinate pairs.
+    
+    Initialize a 'visited' set to track nodes that are visited.
+    
+    Define a recursive function DFS(node, parent):
+        Mark 'node' as visited.
+        For each neighbor in graph[node]:
+            If 'neighbor' is not visited:
+               Recursively call DFS(neighbor, node)
+            Else if 'neighbor' is visited AND 'neighbor' is not the parent of 'node':
+               Return True
+        Return False
+    
+    Iterate through all nodes in the graph:
+        If node is not visited:
+            If DFS(node, -1) returns True, print "Loop detected"
+            return
+    
+    Print "No loop detected" if no cycle is found.
